@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Documents</title></head>
+<body>
+<h2>Documents</h2>
+<ul>
+  {% for file in files %}
+    <li>{{ file }} - <a href="/download/{{ file }}">Download</a></li>
+  {% endfor %}
+</ul>
+<a href="/upload">Upload More</a> | <a href="/logout">Logout</a>
+</body>
+</html>
